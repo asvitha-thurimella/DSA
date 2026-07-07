@@ -3,7 +3,7 @@ class Solution {
     int n=nums.length;
     int i=0;
     
-    for(int j=0;j<n;j++) 
+    for(int j=1;j<n;j++) 
     {
        if(nums[j]!=nums[i])
        {
