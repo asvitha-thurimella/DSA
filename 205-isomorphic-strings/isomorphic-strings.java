@@ -14,9 +14,8 @@ class Solution {
             char charS = s.charAt(i);
             char charT = t.charAt(i);
 
-            // If charS was already mapped
             if (hmap.containsKey(charS)) {
-                // Check if it maps to the same charT as before
+               
                 if (hmap.get(charS) != charT) {
                     return false;
                 }
@@ -30,7 +29,7 @@ class Solution {
             }
         }
 
-        // If no mapping conflicts are found
+       
         return true;
     }
 }
