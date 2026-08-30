@@ -1,16 +1,21 @@
 class Solution {
     public boolean checkPerfectNumber(int num) {
-    int original=num;
-    int sum=0;
+
+    int sum=1;
     if (num <= 1)
       return false;
-    for(int i=1;i<num;i++)
+    for(int i=2;i*i<=num;i++)
     {
         if(num%i==0)
         {
          sum+=i;
+        
+        if(i!=num/i)
+        {
+            sum+=num/i;
+        }
         }
     }
-    return original==sum;
+    return num==sum;
     }
 }
